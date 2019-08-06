@@ -12,6 +12,11 @@
 		F40F0A8722F9368300B001F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40F0A8522F9368300B001F6 /* Main.storyboard */; };
 		F40F0A8922F9369800B001F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40F0A8822F9369800B001F6 /* Assets.xcassets */; };
 		F40F0A8C22F9369800B001F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40F0A8A22F9369800B001F6 /* LaunchScreen.storyboard */; };
+		F40F0A9922F93BFF00B001F6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0A9822F93BFF00B001F6 /* Helper.swift */; };
+		F40F0A9B22F93E0200B001F6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0A9A22F93E0200B001F6 /* TableViewCell.swift */; };
+		F40F0A9D22F93E6C00B001F6 /* DetalisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0A9C22F93E6C00B001F6 /* DetalisViewController.swift */; };
+		F40F0AA022F93ED300B001F6 /* AmazonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0A9F22F93ED300B001F6 /* AmazonModel.swift */; };
+		F40F0AA222F93EF800B001F6 /* AmazonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0AA122F93EF800B001F6 /* AmazonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F40F0A8822F9369800B001F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40F0A8B22F9369800B001F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40F0A8D22F9369800B001F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40F0A9822F93BFF00B001F6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F40F0A9A22F93E0200B001F6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F40F0A9C22F93E6C00B001F6 /* DetalisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalisViewController.swift; sourceTree = "<group>"; };
+		F40F0A9F22F93ED300B001F6 /* AmazonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonModel.swift; sourceTree = "<group>"; };
+		F40F0AA122F93EF800B001F6 /* AmazonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,66 @@
 			isa = PBXGroup;
 			children = (
 				F40F0A8122F9368300B001F6 /* AppDelegate.swift */,
-				F40F0A8322F9368300B001F6 /* ViewController.swift */,
-				F40F0A8522F9368300B001F6 /* Main.storyboard */,
+				F40F0A9722F93BC500B001F6 /* Extentsion */,
+				F40F0A9E22F93E8F00B001F6 /* Data */,
+				F40F0A9622F93B6B00B001F6 /* Model */,
+				F40F0A9522F93B6100B001F6 /* View */,
+				F40F0A9422F93B5100B001F6 /* Controller */,
+				F40F0A9322F93B4000B001F6 /* Storyboard */,
 				F40F0A8822F9369800B001F6 /* Assets.xcassets */,
-				F40F0A8A22F9369800B001F6 /* LaunchScreen.storyboard */,
 				F40F0A8D22F9369800B001F6 /* Info.plist */,
 			);
 			path = CustomTableView;
+			sourceTree = "<group>";
+		};
+		F40F0A9322F93B4000B001F6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F40F0A8522F9368300B001F6 /* Main.storyboard */,
+				F40F0A8A22F9369800B001F6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F40F0A9422F93B5100B001F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F40F0A8322F9368300B001F6 /* ViewController.swift */,
+				F40F0A9C22F93E6C00B001F6 /* DetalisViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F40F0A9522F93B6100B001F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F40F0A9A22F93E0200B001F6 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F40F0A9622F93B6B00B001F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F40F0A9F22F93ED300B001F6 /* AmazonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F40F0A9722F93BC500B001F6 /* Extentsion */ = {
+			isa = PBXGroup;
+			children = (
+				F40F0A9822F93BFF00B001F6 /* Helper.swift */,
+			);
+			path = Extentsion;
+			sourceTree = "<group>";
+		};
+		F40F0A9E22F93E8F00B001F6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F40F0AA122F93EF800B001F6 /* AmazonData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F40F0A8422F9368300B001F6 /* ViewController.swift in Sources */,
+				F40F0AA222F93EF800B001F6 /* AmazonData.swift in Sources */,
+				F40F0A9B22F93E0200B001F6 /* TableViewCell.swift in Sources */,
 				F40F0A8222F9368300B001F6 /* AppDelegate.swift in Sources */,
+				F40F0A9D22F93E6C00B001F6 /* DetalisViewController.swift in Sources */,
+				F40F0A9922F93BFF00B001F6 /* Helper.swift in Sources */,
+				F40F0AA022F93ED300B001F6 /* AmazonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
