@@ -21,7 +21,8 @@ class ViewController: UIViewController {
 }
 extension ViewController:UITableViewDataSource,UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        //return 0
+        return 10 //this is animation test value
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arraData.count
@@ -43,6 +44,18 @@ extension ViewController:UITableViewDataSource,UITableViewDelegate {
         if editingStyle == .delete {
             arraData.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //Set intial cell
+        cell.alpha = 0
+        let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 20, 0)
+        cell.layer.transform = transform
+        
+        //Animation & final state
+        UIView.animate(withDuration: 1.0) {
+            cell.alpha = 1
+            cell.layer.transform = CATransform3DIdentity
         }
     }
 }
